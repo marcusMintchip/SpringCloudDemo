@@ -1,0 +1,6 @@
+rootProject.name = 'cloud-demo'
+include 'config'
+include 'discovery'
+include 'gateway'
+include 'client'
+

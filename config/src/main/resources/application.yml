@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://${user.home}/config-repo
+          searchPaths: '{application}/{profile}'
+      label: master
+
+server:
+  port: 8888
